@@ -40,6 +40,7 @@
       <div class="column col-md-8">
         <!-- ここにタスクが表示される -->
         test1
+        testDEVELOP
       </div>
     </div>
   </div>
