@@ -39,7 +39,7 @@
       </div>
       <div class="column col-md-8">
         <!-- ここにタスクが表示される -->
-        test
+        
       </div>
     </div>
   </div>
