@@ -26,7 +26,6 @@
           <div class="panel-body">
             <a href="#" class="btn btn-default btn-block">
               フォルダを追加する
-              testtest
             </a>
           </div>
           <div class="list-group">
@@ -40,7 +39,6 @@
       </div>
       <div class="column col-md-8">
         <!-- ここにタスクが表示される -->
-        develop
       </div>
     </div>
   </div>
