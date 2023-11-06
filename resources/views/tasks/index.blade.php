@@ -26,6 +26,7 @@
           <div class="panel-body">
             <a href="#" class="btn btn-default btn-block">
               フォルダを追加する
+              testtest
             </a>
           </div>
           <div class="list-group">
