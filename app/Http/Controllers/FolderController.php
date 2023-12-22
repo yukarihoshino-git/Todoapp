@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\Folder;
 use App\Models\Task;
+use App\Models\User;
 use Illuminate\Http\Request;
 use App\Http\Requests\CreateFolder;
+use Illuminate\Support\Facades\Auth;
 
 class FolderController extends Controller
 {
@@ -22,10 +24,15 @@ class FolderController extends Controller
         // タイトルに入力値を代入する
         $folder->title = $request->title;
         // インスタンスの状態をデータベースに書き込む
-        $folder->save();
+        
+        // $folder = Auth::user()->folders();
+        // dd($folder);
+        
+        Auth::user()->folders()->save($folder);
+        
     
         return redirect()->route('tasks.index', [
-            'id' => $folder->id,
+            'folder' => $folder->id,
         ]);
     }
 

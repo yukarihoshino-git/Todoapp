@@ -1,4 +1,3 @@
-
 @extends('layout')
 
 @section('content')
@@ -7,13 +6,9 @@
       <div class="col col-md-offset-3 col-md-6">
         <nav class="panel panel-default">
           <div class="panel-heading">パスワード再発行</div>
-          <x-jet-validation-errors class="mb-4" />
-
           <div class="panel-body">
             <form action="{{ route('password.update') }}" method="POST">
               @csrf
-
-              <input type="hidden" name="token" value="{{ $request->route('token') }}">
               <div class="form-group">
                 <label for="email">メールアドレス</label>
                 <input type="text" class="form-control" id="email" name="email" />
