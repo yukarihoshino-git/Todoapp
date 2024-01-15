@@ -91,7 +91,7 @@ return [
     'mimes' => 'The :attribute must be a file of type: :values.',
     'mimetypes' => 'The :attribute must be a file of type: :values.',
     'min' => [
-        'numeric' => 'The :attribute must be at least :min.',
+        'numeric' => ':attribute は :min 文字以上必要です。',
         'file' => 'The :attribute must be at least :min kilobytes.',
         'string' => ':attribute は :min 文字以上必要です.',
         'array' => 'The :attribute must have at least :min items.',
